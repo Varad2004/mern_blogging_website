@@ -1,7 +1,72 @@
-POST http://localhost:3000/signin 
+# access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjJmMTdhNzQxZTJkNzJlN2M5NDMxYSIsImlhdCI6MTcyNzE5NzU2Mn0.DQjeGYEvHaj2O-DIPcNBNaPv6pdq2lrfWC4ROMvmuSw
+
+# GET http://localhost:3000/get-upload-url
+
+# POST http://localhost:3000/create-blog
+# Content-Type: application/json
+
+# {
+#     "blog-name:"this is a test blog"
+# }
+
+# POST http://localhost:3000/signup
+# Content-Type: application/json
+
+# {
+#     "fullname":"john1",
+#     "email":"john1@gmail.com",
+#     "password":"John@23"
+# }
+
+#POST http://localhost:3000/create-blog
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjJmNWI1YmM5NjBmN2E1MDFiYTk2MCIsImlhdCI6MTcyNzE5ODY0NX0.9dWqjs5lzPBjvPErP3V-rucCCFkPjX6J8QnYKx_t8fk
+
+# {
+#     "title":"test",
+#     "banner":"http://example.com/image-url",
+#     "des":"this is short one and easy",
+#     "content":{
+#         "blocks":[1,2]
+#     },
+#     "tags":["tag1","tag2"]
+# }
+
+//GEt http://localhost:3000/trending-blogs
+
+# POST http://localhost:3000/search-blogs
+# Content-Type: application/json
+
+# {
+#     "tag":"study"
+# }
+
+# POST http://localhost:3000/search-users
+# Content-Type: application/json
+
+# {
+#     "query": "varad"
+# }
+
+# POST http://localhost:3000/get-profile
+# Content-Type: application/json
+
+# {
+#     "username": "kultheharshal163"
+# }
+
+# POST http://localhost:3000/get-blog
+# Content-Type: application/json
+
+# {
+#     "blog_id": "Traveling-is-great-adventure-gpUzOz5QQ_Sj-MxeBEw2v"
+# }
+
+DELETE http://localhost:3000/like-blog
 Content-Type: application/json
 
 {
-    "email": "kunaa@gmail.com",
-    "password": "Kunaal"
+  "user": "user_id_value",
+  "blog": "blog_id_value",
+  "type": "like"
 }
